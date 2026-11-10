@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fffaf5" />
+    <meta
+      name="description"
+      content="Discover thoughtful finds and favorite products in one place."
+    />
+    <title>Shopee Finds — Little things, lovely finds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Shopee Finds home">
+        <span class="brand-mark" aria-hidden="true">s</span>
+        <span data-store-name>Shopee Finds</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#featured">Featured</a>
+        <a href="#shop">Shop finds</a>
+        <a href="#about">About</a>
+      </nav>
+      <a class="header-cta" href="#shop">Explore finds <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A little joy, delivered</p>
+          <h1 id="hero-title">Little things,<br /><em>lovely finds.</em></h1>
+          <p class="hero-description">
+            Your next favorite thing might be just a scroll away. Browse handpicked finds
+            for everyday living.
+          </p>
+          <a class="button button-dark" href="#shop">Find your next favorite <span aria-hidden="true">↘</span></a>
+          <div class="hero-note">
+            <span class="note-stars" aria-hidden="true">★★★★★</span>
+            <span>Curated with care, just for you</span>
+          </div>
+        </div>
+
+        <div class="carousel" id="featured" aria-label="Featured products">
+          <div class="carousel-image-wrap">
+            <img class="carousel-image" src="" alt="" />
+            <span class="carousel-tag"></span>
+            <div class="carousel-counter" aria-live="polite"></div>
+          </div>
+          <div class="carousel-caption">
+            <div>
+              <p class="carousel-kicker">ON OUR WISHLIST</p>
+              <h2 class="carousel-title"></h2>
+              <p class="carousel-price"></p>
+            </div>
+            <a class="carousel-link" href="#" target="_blank" rel="noopener noreferrer">
+              Shop find <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="carousel-controls">
+            <div class="carousel-dots" aria-label="Choose a featured product"></div>
+            <div class="carousel-arrows">
+              <button class="carousel-arrow previous" type="button" aria-label="Previous featured product">←</button>
+              <button class="carousel-arrow next" type="button" aria-label="Next featured product">→</button>
+            </div>
+          </div>
+        </div>
+        <div class="hero-decoration decoration-one" aria-hidden="true">✳</div>
+        <div class="hero-decoration decoration-two" aria-hidden="true">✳</div>
+      </section>
+
+      <section class="shop-section" id="shop" aria-labelledby="shop-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE GOOD STUFF</p>
+            <h2 id="shop-title">Finds worth <em>finding.</em></h2>
+          </div>
+          <p class="section-intro">A few lovely picks for your home, routine, and everything in between.</p>
+        </div>
+        <div class="category-list" aria-label="Filter products by category"></div>
+        <div class="product-grid"></div>
+      </section>
+
+      <section class="about-section" id="about">
+        <span class="about-sparkle" aria-hidden="true">✳</span>
+        <p class="eyebrow">A NOTE FROM US</p>
+        <h2>Good finds make<br />ordinary days <em>lovelier.</em></h2>
+        <p>
+          We share things we think you’ll love. Some links are affiliate links, which means
+          we may earn a small commission if you shop through them, at no extra cost to you.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#">
+        <span class="brand-mark" aria-hidden="true">s</span>
+        <span data-store-name>Shopee Finds</span>
+      </a>
+      <p>Made with care for your everyday.</p>
+      <span>© <span id="current-year"></span> <span data-store-name>Shopee Finds</span></span>
+    </footer>
+  </body>
+</html>
